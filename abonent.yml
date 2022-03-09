@@ -2,7 +2,7 @@
 Abonent:
    Accountcd: string
    FIO: string
-   House: House      
+   House: '/path/to/House/{self.Houseid}'      
    InformationOwner:
       Ownerid: integer
 ...
