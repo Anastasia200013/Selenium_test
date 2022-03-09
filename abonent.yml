@@ -2,9 +2,12 @@
 Abonent:
    Accountcd: string
    FIO: string
-   House:
-      Houseid: integer
-      AddressString: string
+   House: '/path/to/House/{self.Houseid}'      
    InformationOwner:
       Ownerid: integer
+...
+---
+House:
+  Houseid: integer
+  AddressString: string
 ...
