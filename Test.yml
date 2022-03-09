@@ -1,0 +1,10 @@
+---
+TestDescription:
+   FileSelectors: "SearchSelectors.yml"
+   Type: bool
+   Test: "Data validation"
+   TestAccount: '\d{8}'
+   TestFIO: '[А-Я]+( [А-Я].){2}'
+   TestAddress: '[а-яА-Я0-9,\.\s]+'
+   TestInfoOwner: '\d{4}'
+...

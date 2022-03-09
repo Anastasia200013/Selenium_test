@@ -1,0 +1,8 @@
+---
+Selectors:
+   TypeSelecrors: 'Data validation'
+   StrAccountcd: "tr.ng-scope:nth-child(1)  a.ng-scope"
+   StrFIO: "tr.ng-scope:nth-child(1)  td.ng-scope:nth-child(3) div.ng-binding.ng-scope"
+   StrAddressString: "tr.ng-scope:nth-child(1)  td.ng-scope:nth-child(4)>div.ng-scope"
+   StrOwnerid: "tr.ng-scope:nth-child(1)  td.ng-scope:nth-child(5)>div.ng-scope"
+...

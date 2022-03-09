@@ -1,0 +1,10 @@
+---
+Abonent:
+   Accountcd: string
+   FIO: string
+   House:
+      Houseid: integer
+      AddressString: string
+   InformationOwner:
+      Ownerid: integer
+...
