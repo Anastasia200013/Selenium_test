@@ -4,17 +4,17 @@ TestDescription:
    FileSelectors: "C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSlect\\SearchSelectors.yml"
    Tests:
       - Statement: 'FOR Accountcd'
-        Type: 'Regex.IsMatch'
+        Type: 'Regex.fullMatch'
         TestSource: 'direct-value'
         Exp: '\d{8}'
 
       - Statement: 'FOR FIO'
-        Type: 'Regex.IsMatch'
+        Type: 'Regex.fullMatch'
         TestSource: 'direct-value'
         Exp: '[А-Я]+( [А-Я].){2}'
 
       - Statement: 'FOR Address'
-        Type: 'Regex.IsMatch'
+        Type: 'Regex.fullMatch'
         TestSource: 'direct-value'
         Exp: '[а-яА-Я0-9,\.\s]+'
 

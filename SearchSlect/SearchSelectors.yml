@@ -10,13 +10,13 @@ Selectors:
       - FieldName: 'AddressString'
         Location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(4)>div.ng-scope'
 ...
----
-Selectors:
-   Type: 'House'
-   Subtype: 'Abonent'
-   Locations:
-      - FieldName: 'HouseId'
-        Location: 'TODO'
-      - FieldName: 'AddressString'
-        Location: 'TODO'
-...
+# ---
+# Selectors:
+ #   Type: 'House'
+ #  Subtype: 'Abonent'
+ #  Locations:
+ #     - FieldName: 'HouseId'
+ #       Location: ''
+ #     - FieldName: 'AddressString'
+ #       Location: ''
+# ...
