@@ -1,14 +1,10 @@
-import pytest
 import yaml
 import re
-import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from yaml.loader import SafeLoader
-from selenium import webdriver
 from MainTesting.conftest import driver_init
-from selenium.webdriver.common.keys import Keys
 
 
 # Функция ожидания элементов
@@ -22,10 +18,10 @@ def wait_of_element_located(selector, driver_init):
 
 
 # Функция проверки зачения на соответсвие регулярному выражению
-def regex(f_lement, reg_text, driver_init):
+def regex(f_element, reg_text, driver_init):
     search_element = WebDriverWait(driver_init, 10).until(
         EC.presence_of_element_located(
-            (By.CSS_SELECTOR, f_lement)
+            (By.CSS_SELECTOR, f_element)
         )
     )
     element = search_element.text
@@ -33,46 +29,10 @@ def regex(f_lement, reg_text, driver_init):
     print('YES' if check_test else 'NO')
 
 
-# Вынесем аутентификацию юзера в отдельную функцию
-def auth_user(user_name, password, driver_init):
-    # Поиск и ожидание элементов и присваивание к переменным.
-    input_username = wait_of_element_located(selector='#input_login_01', driver_init=driver_init)
-    input_password = wait_of_element_located(selector='#input_password_01', driver_init=driver_init)
-    button_enter = wait_of_element_located(selector='#btn_login_accept_01.btn.btn-primary.btn-modal',
-                                           driver_init=driver_init)
-    # Действия с формами
-    time.sleep(2)
-    input_username.send_keys(user_name)
-    time.sleep(2)
-    input_password.send_keys(password)
-    time.sleep(2)
-    button_enter.send_keys(Keys.RETURN)
-    time.sleep(4)
-
-
-# переход на нужную старницу
-def perechod(driver_init):
-    search_abonent = wait_of_element_located(selector='div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) '
-                                                      'li:nth-child(2)>a', driver_init=driver_init)
-    search_abonent.send_keys(Keys.RETURN)
-    time.sleep(6)
-
-
 # Тест
-def test_add_jacket_to_the_shopcart(driver_init):
-    # Аутентификация пользователя
-    with open('D:\Fixtures\Fixture.yml', encoding='utf-8') as fd:
-        # Load YAML data from the file
-        read_options = dict(yaml.load(fd, Loader=SafeLoader))
-    login_user = str(read_options['TestUsers'][1]['Login'])
-    password_user = str(read_options['TestUsers'][1]['Password'])
-
-    auth_user(login_user, password_user, driver_init=driver_init)
-
-    perechod(driver_init=driver_init)
-
+def test_add_jacket_to_the_shopcart(driver_init, auth_user, perechod):
     with open('C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\TestsYML\\Test.yml', encoding='utf-8') as f:
-        # Load YAML data from the file
+        # Загрузка YAML данных из файла
         read_data_test = dict(yaml.load(f, Loader=SafeLoader))
     # file_name = str(read_data_test['TestDescription']['FileSelectors'])
     test_reg_ab = str(read_data_test['TestDescription']['Tests'][0]['Exp'])
@@ -82,7 +42,7 @@ def test_add_jacket_to_the_shopcart(driver_init):
     print(test_reg_ab, ';', test_reg_fio, ';', test_reg_address)
 
     with open('C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSlect\\SearchSelectors.yml', encoding='utf-8') as h:
-        # Load YAML data from the file
+        # Загрузка YAML данных из файла
         read_data_slcrt = dict(yaml.load(h, Loader=SafeLoader))
 
     selector_ab = str(read_data_slcrt['Selectors']['Locations'][0]['Location'])
