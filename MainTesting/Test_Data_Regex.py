@@ -1,7 +1,8 @@
+import time
 from pathlib import Path
-from OnBeforeTest.conftest import driver_init
-from Utility import regex, read_file_to_dictionary
-
+from selenium.webdriver import Keys
+from OnBeforeTest.conftest import driver_init_admin
+from Utility import regex, read_file_to_dictionary, wait_of_element_located_fix
 
 home = Path.cwd()
 path_searchselect = 'C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSelect\\SearchSelectors.yml'
@@ -9,7 +10,7 @@ path_testcases = Path('C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\Tes
 
 
 # Тест
-def test_regular_exp(driver_init):
+def test_regular_exp(driver_init_admin):
     # file_name = str(read_file_to_dictionary(path_testcases)['TestDescription']['FileSelectors'])
     test_reg_ab = str(read_file_to_dictionary(path_testcases)['TestDescription']['Tests'][0]['Exp'])
     test_reg_fio = str(read_file_to_dictionary(path_testcases)['TestDescription']['Tests'][1]['Exp'])
@@ -23,9 +24,19 @@ def test_regular_exp(driver_init):
     # selector_ow = str(read_data_slcrt['Selectors']['StrOwnerid'])
     print(selector_ab, ';', selector_fio, ';', selector_address)
 
-    regex(selector_ab, test_reg_ab, driver_init=driver_init)
-    regex(selector_fio, test_reg_fio, driver_init=driver_init)
-    regex(selector_address, test_reg_address, driver_init=driver_init)
+    regex(selector_ab, test_reg_ab, driver_init_admin=driver_init_admin)
+    regex(selector_fio, test_reg_fio, driver_init_admin=driver_init_admin)
+    regex(selector_address, test_reg_address, driver_init_admin=driver_init_admin)
+
+    selector_page_account = str(read_file_to_dictionary(path_searchselect)['Selectors_pages']['Locations'][2]['Location'])
+    search_abonent = wait_of_element_located_fix(selector=selector_page_account, driver=driver_init_admin)
+    search_abonent.send_keys(Keys.RETURN)
+    time.sleep(6)
+
+    selector_page_account = str(read_file_to_dictionary(path_searchselect)['Selectors_pages']['Locations'][3]['Location'])
+    search_abonent = wait_of_element_located_fix(selector=selector_page_account, driver=driver_init_admin)
+    search_abonent.send_keys(Keys.RETURN)
+    time.sleep(6)
 
     print(home)
 
@@ -39,4 +50,4 @@ def test_view_main_page_cashier(cashier_login_fixture):
 
 
 if __name__ == '__main__':
-    test_regular_exp(driver_init=driver_init)
+    test_regular_exp(driver_init_admin=driver_init_admin)

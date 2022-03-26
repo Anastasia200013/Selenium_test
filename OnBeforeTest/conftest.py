@@ -7,14 +7,14 @@ from selenium.webdriver.common.keys import Keys
 from Utility import wait_of_element_located_fix, read_file_to_dictionary
 
 path_fixture = 'D:\Fixtures\Fixture.yml'
-path_searchselect = ('C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSelect\\SearchSelectors.yml')
+path_searchselect = 'C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSelect\\SearchSelectors.yml'
 
 print('LOGGING: Enter conftest')
 
 
 # Авторизация от одминистратора
 @pytest.fixture
-def driver_init():
+def driver_init_admin():
     url = (read_file_to_dictionary(path_fixture)['TestConnection']['URL'])
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
@@ -26,9 +26,9 @@ def driver_init():
     user_login = str(read_file_to_dictionary(path_fixture)['TestUsers'][0]['Login'])
     user_password = str(read_file_to_dictionary(path_fixture)['TestUsers'][0]['Password'])
 
-    selector_login = str(read_file_to_dictionary(path_searchselect)['Selectors_authorization']['Locations'][0]['Location'])
-    selector_password = str(read_file_to_dictionary(path_searchselect)['Selectors_authorization']['Locations'][1]['Location'])
-    selector_button = str(read_file_to_dictionary(path_searchselect)['Selectors_authorization']['Locations'][2]['Location'])
+    selector_login = str(read_file_to_dictionary(path_searchselect)['SelectorsAuthorization']['Locations'][0]['Location'])
+    selector_password = str(read_file_to_dictionary(path_searchselect)['SelectorsAuthorization']['Locations'][1]['Location'])
+    selector_button = str(read_file_to_dictionary(path_searchselect)['SelectorsAuthorization']['Locations'][2]['Location'])
 
     # Поиск и ожидание элементов и присваивание к переменным.
     time.sleep(3)
@@ -44,8 +44,9 @@ def driver_init():
     button_enter.send_keys(Keys.RETURN)
     time.sleep(4)
 
-    search_abonent = wait_of_element_located_fix(selector='div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) '
-                                                          'li:nth-child(2)>a', driver=driver)
+    selector_page_account = str(read_file_to_dictionary(path_searchselect)['Selectors_pages']['Locations'][1]['Location'])
+    search_abonent = wait_of_element_located_fix(selector=selector_page_account, driver=driver)
+
     search_abonent.send_keys(Keys.RETURN)
     time.sleep(6)
 

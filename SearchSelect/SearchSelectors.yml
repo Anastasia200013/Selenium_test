@@ -1,4 +1,14 @@
 ---
+SelectorsAuthorization:
+   Type: ''
+   #   Subtype: '-'
+   Locations:
+      - FieldName: 'User_login'
+        Location: '#input_login_01'
+      - FieldName: 'User_password'
+        Location: '#input_password_01'
+      - FieldName: 'Button_enter'
+        Location: '#btn_login_accept_01.btn.btn-primary.btn-modal'
 Selectors:
    Type: 'Abonent'
    #   Subtype: '-'
@@ -9,17 +19,26 @@ Selectors:
         Location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(3) div.ng-binding.ng-scope'
       - FieldName: 'AddressString'
         Location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(4)>div.ng-scope'
-...
-Selectors_authorization:
+Selectors_pages:
    Type: ''
-   #   Subtype: '-'
+   #  Subtype: '-'
    Locations:
-      - FieldName: 'User_login'
-        Location: '#input_login_01'
-      - FieldName: 'User_password'
-        Location: '#input_password_01'
-      - FieldName: 'Button_enter'
-        Location: '#btn_login_accept_01.btn.btn-primary.btn-modal'
+      - FieldName: 'Personal_account'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(1)>a'
+      - FieldName: 'Personal_account'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(2)>a'
+      - FieldName: 'Houses'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(3)>a'
+      - FieldName: 'Payments'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(4)>a'
+      - FieldName: 'Report'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(5)>a'
+      - FieldName: 'Document_flow'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(6)>a'
+      - FieldName: 'Report'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(7)>a'
+      - FieldName: 'Document_flow'
+        Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(8)>a'
 ...
 # ---
 # Selectors:
