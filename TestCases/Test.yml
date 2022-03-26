@@ -1,7 +1,7 @@
 ---
 TestDescription:
    Test: "Abonent data validation"
-   FileSelectors: "C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSlect\\SearchSelectors.yml"
+   FileSelectors: "C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSelect\\SearchSelectors.yml"
    Tests:
       - Statement: 'FOR Accountcd'
         Type: 'Regex.fullMatch'
@@ -11,7 +11,7 @@ TestDescription:
       - Statement: 'FOR FIO'
         Type: 'Regex.fullMatch'
         TestSource: 'direct-value'
-        Exp: '[А-Я]+( [А-Я].){2}'
+        Exp: '[А-Яа-я]+( [А-Я].){2}'
 
       - Statement: 'FOR Address'
         Type: 'Regex.fullMatch'

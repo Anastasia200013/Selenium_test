@@ -10,6 +10,17 @@ Selectors:
       - FieldName: 'AddressString'
         Location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(4)>div.ng-scope'
 ...
+Selectors_authorization:
+   Type: ''
+   #   Subtype: '-'
+   Locations:
+      - FieldName: 'User_login'
+        Location: '#input_login_01'
+      - FieldName: 'User_password'
+        Location: '#input_password_01'
+      - FieldName: 'Button_enter'
+        Location: '#btn_login_accept_01.btn.btn-primary.btn-modal'
+...
 # ---
 # Selectors:
  #   Type: 'House'
