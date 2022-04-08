@@ -10,6 +10,7 @@ SelectorsAuthorization:
       - FieldName: 'Button_enter'
         Location: '#btn_login_accept_01.btn.btn-primary.btn-modal'
 Selectors:
+   FileTest: 'C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\TestCases\\Test.yml'
    Type: 'Abonent'
    #   Subtype: '-'
    Locations:

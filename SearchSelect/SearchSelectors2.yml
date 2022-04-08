@@ -1,0 +1,20 @@
+Selectors:
+  FileTest: ''
+  Locations:
+  - FieldName: Accountcd
+    Location: ''
+  - FieldName: FIO
+    Location: ''
+  - FieldName: PhoneNumber
+    Location: ''
+  - FieldName: Address
+    Location: ''
+  - FieldName: AccountcdKVC
+    Location: ''
+  - FieldName: ContractorInformation
+    Location: ''
+  - FieldName: Services
+    Location: ''
+  - FieldName: Counters
+    Location: ''
+  Type: Abonent

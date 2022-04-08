@@ -2,12 +2,123 @@
 Abonent:
    Accountcd: string
    FIO: string
-   House: '/path/to/House/{self.Houseid}'
-   InformationOwner:
-      Ownerid: integer
+   PhoneNumber: string
+   Address: '/path/to/House/{self.AddressId}'
+   AccountcdKVC: string
+   ContractorInformation: '/path/to/InformationOwner/{self.Ownerid}'
+   Services: '/path/to/Services/{self.ServiceId}'
+   Counters: '/path/to/Services/{self.ServiceId}/Counter/{self.CounterId}'
 ...
----
-House:
-   Houseid: integer
-   AddressString: string
-...
+#---
+#House:
+#   Houseid: integer
+#   Address: string
+#   Type: string
+#   AmountCounters: integer
+#   AmountAccountcd: integer
+#   AmountApartmentes: integer
+#   AmountOfRegistered: integer
+#   AreaHouse: integer
+#   CommissionDate: date
+#   NumberEntrances: integer
+#   NumberFloors: integer
+#   - Accountcd: '/path/to/Abonent/{self.Accountcd}'
+#   - Services: '/path/to/Services/{self.ServiceId}'
+#   - Counters: '/path/to/Services/Counter/{self.CounterId}'
+#...
+#---
+#InformationOwner:
+#   Ownerid: integer
+#   ContractorId: '/path/to/ContractorService/{self.ContractorId}'
+#   OwnerName: string
+#   - Characteristics: '/path/to/Characteristics/{self.CharacteristicId}'
+#   - Parameters: '/path/to/Parameters/{self.ParameterId}'
+#...
+#---
+#Characteristics:
+#   TypeInformtion: string
+#   CharacteristicId: string
+#   Name: string
+#   PresentValue: integer
+#   DateOfChange: date
+#   StartDate: date
+#   Edit: boolean
+#...
+#---
+#Parameters:
+#   TypeInformtion: string
+#   ParameterId: string
+#   Name: string
+#   PresentValue: string
+#   DateOfChange: date
+#   StartDate: date
+#   Edit: boolean
+#...
+#---
+#ContractorService:
+#   ContractorId: string
+#   ContractorName: string
+#   InformationOwner: boolean
+##   - Services: '/path/to/Services/{self.SystemId}'
+#...
+#---
+#Services:
+#   SystemId: string
+#   OrganizationId: '/path/to/ContractorService/{self.ContractorId}'
+#   ServiceId: string
+#   ServiseName: string
+#   - Counter: '/path/to/Counter/{self.CounterId}'
+#   Price: float
+#   NormConsuming: float
+#   Tariff: float
+#   ParameterCounter: boolean
+#   TornovelInformation:
+#      FactMonth: date
+#      OpenSaldo: float
+#      VolumConsumptoin: float
+#      Accrual: float
+#      Recount: float
+#      MonthAccrual: float
+#      PyaSum: float
+#      EndSaldo: float
+#      CurrentSaldo: float
+#      PeniOpenSaldo: float
+#      PeniAccrual: float
+#      PeniRecount: float
+#      PeniMonthAccrual: float
+#      PeniPyaSum: float
+#      PeniEndSaldo: float
+#      CurrentPeniSaldo: float
+#...
+#---
+#Counter:
+#   CounterId: string
+#   Mark: string
+#   CounterName: string
+#   SerialNumber: string
+#   RegistrationDate: date
+#   InstallationLocation: string
+#   Status: string
+#   IndicationsNow: integer
+#   InitialIndications: integer
+#   NextVerificationDate: date
+#   LastVerification Date: date
+#   SaelDate: date
+#   NumberSeal: string
+#   Typeseal: string
+#   Regime: string
+#...
+#---
+#SoursePayment:
+#   SoursePaymentId:
+#   SoursePaymentName:
+#...
+#---
+#Payment:
+#   PaymentId:
+#   PaymentPeriod:
+#   PaymentDate:
+#   PaymentAmount:
+#   - ServiceId: '/path/to/Services/{self.ServiceId}'
+#   SoursePaymentId: '/path/to/SoursePayment/{self.SoursePaymentId}'
+#...

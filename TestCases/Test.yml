@@ -1,9 +1,9 @@
 ---
 TestDescription:
    Test: "Abonent data validation"
-   FileSelectors: "C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSelect\\SearchSelectors.yml"
+   FileAbonent: "C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\Domain\\abonent.yml"
    Tests:
-      - Statement: 'FOR Accountcd'
+      - Statement: 'FOR Abonent.Accountcd'
         Type: 'Regex.fullMatch'
         TestSource: 'direct-value'
         Exp: '\d{8}'

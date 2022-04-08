@@ -1,10 +1,8 @@
 import pytest
-import yaml
 import time
-from yaml.loader import SafeLoader
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from Utility import wait_of_element_located_fix, read_file_to_dictionary
+from inenv.Lib.Utility import read_file_to_dictionary, wait_of_element_located_fix
 
 path_fixture = 'D:\Fixtures\Fixture.yml'
 path_searchselect = 'C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\SearchSelect\\SearchSelectors.yml'
@@ -12,9 +10,9 @@ path_searchselect = 'C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\Searc
 print('LOGGING: Enter conftest')
 
 
-# Авторизация от одминистратора
+# Авторизация от администратора
 @pytest.fixture
-def driver_init_admin():
+def driver_init_user():
     url = (read_file_to_dictionary(path_fixture)['TestConnection']['URL'])
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
@@ -23,8 +21,8 @@ def driver_init_admin():
 
     print("LOGGING: Authentication")
 
-    user_login = str(read_file_to_dictionary(path_fixture)['TestUsers'][0]['Login'])
-    user_password = str(read_file_to_dictionary(path_fixture)['TestUsers'][0]['Password'])
+    user_login = str(read_file_to_dictionary(path_fixture)['TestUsers'][3]['Login'])
+    user_password = str(read_file_to_dictionary(path_fixture)['TestUsers'][3]['Password'])
 
     selector_login = str(read_file_to_dictionary(path_searchselect)['SelectorsAuthorization']['Locations'][0]['Location'])
     selector_password = str(read_file_to_dictionary(path_searchselect)['SelectorsAuthorization']['Locations'][1]['Location'])
