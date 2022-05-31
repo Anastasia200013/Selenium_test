@@ -1,0 +1,15 @@
+---
+Organization:
+   ContractorId: string
+   ContractorName: string
+   AmountAccountcd: integet
+   AmountHouses: integet
+   AmountServices: integet
+   AccruedOnMonth: string
+   AccruedOnClosetUntilMonth: date
+   InformationOwner: boolean
+   Services:
+      - Serviceid: string
+   Houses:
+      - Houseid: string
+...

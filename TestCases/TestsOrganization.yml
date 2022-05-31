@@ -1,0 +1,54 @@
+!!python/object:inenv.Lib.Case.TestDescription
+file_abonent: 'PycharmProjects\\selenium-test\\Domain\\organization.yml'
+test: ''
+tests:
+- !!python/object:inenv.Lib.Case.Test
+  exp: '\d{10}'
+  statement: 'FOR Organization.contractor_id'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[А-Яа-я]+'
+  statement: 'FOR Organization.contractor_name'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: 'Select count(LSHET) from ABONENTS'
+  statement: 'FOR Organization.amount_accountcd'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: 'Select count(*) from HOUSES'
+  statement: 'FOR Organization.amount_houses'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: 'Select count(*) from BALANCESLIST'
+  statement: 'FOR Organization.amount_services'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Organization.accrued_on_month'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Organization.accrued_on_closet_until_month'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Organization.information_owner'
+  test_source: 'direct-value'
+  type: 'Boll'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Organization.services'
+  test_source: 'direct-value'
+  type: 'GetList'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Organization.houses'
+  test_source: ''
+  type: 'JumpHouses'

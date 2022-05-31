@@ -1,0 +1,79 @@
+!!python/object:inenv.Lib.Case.TestDescription
+file_abonent: 'PycharmProjects\\selenium-test\\Domain\\counter.yml'
+test: ''
+tests:
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Counter.serviceid'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[а-яА-Я0-9.\(\)\s]+'
+  statement: 'FOR Counter.mark'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[а-яА-Я0-9.\(\)\s]+'
+  statement: 'FOR Counter.counter_name'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[0-9]+'
+  statement: 'FOR Counter.serial_number'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: 'Select INSTALLDATE from ABONENTSEQUIPMENT where LSHET="1130090003"' #and EQUIPMENTID = (select EQUIPMENTID from parentequipment where ="1234567")'
+  statement: 'FOR Counter.registration_date'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[А-Яа-я]+'
+  statement: 'FOR Counter.installation_location'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[а-яА-Я0-9.\(\)\s]'
+  statement: 'FOR Counter.status'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Counter.indications_now'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Counter.initial_indications'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Counter.next_verification_date'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Counter.last_verification_date'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Counter.date_seal'
+  test_source: 'direct-value'
+  type: 'SQLRequest'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[0-9№]+'
+  statement: 'FOR Counter.number_seal'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[А-Яа-я]+'
+  statement: 'FOR Counter.type_seal'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: 'Select count(*) from RESOURCESREGIMSLIST'
+  statement: 'FOR Counter.regime'
+  test_source: 'direct-value'
+  type: 'GetList'

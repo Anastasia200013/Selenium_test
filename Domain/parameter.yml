@@ -1,0 +1,14 @@
+---
+Parameters:
+   TypeInformtion: string
+   ParameterId: string
+   Name: string
+   PresentValue: integer
+   DateOfChange: date
+   Value: string
+   ValidFrom: date
+   ValidFor: date
+   AccountDate: date
+   StartDate: date
+   Edit: boolean
+...

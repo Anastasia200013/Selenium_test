@@ -1,0 +1,34 @@
+!!python/object:inenv.Lib.Selector.Selectors
+file_test: 'PycharmProjects\\selenium-test\\TestCases\\TestsOrganization.yml'
+locations:
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: contractor_id
+  location: 'div.panel-body:nth-child(1)  p:nth-child(2) b.ng-binding:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: contractor_name
+  location: 'div.panel-body:nth-child(1)  p:nth-child(1) b.ng-binding:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: amount_accountcd
+  location: 'div.panel-body:nth-child(2) p:nth-child(2) a.ng-binding'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: amount_houses
+  location: 'div.panel-body:nth-child(2) p:nth-child(3) a.ng-binding'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: amount_services
+  location: 'div.panel-body:nth-child(2) p:nth-child(4) a.ng-binding'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: accrued_on_month
+  location: 'div.info-place__item-group:nth-child(2) b.ng-binding:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: accrued_on_closet_until_month
+  location: 'div.info-place__item-group:nth-child(3) b.ng-binding:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: information_owner
+  location: 'tbody:nth-child(2) td:nth-child(5) a'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: services
+  location: 'div.col-sm-6:nth-child(2) span.glyphicon.glyphicon-chevron-down:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: houses
+  location: 'div.panel-body:nth-child(2) p:nth-child(3) a.ng-binding'
+type: Organization

@@ -1,0 +1,136 @@
+---
+Pages:
+   - NamePage: Main
+     Elements: 
+        - NameElement: ButtonPortal
+          Action: Click
+        - NameElement: WindowOrganization
+          Action: Presents
+        - NameElement: WindowServiceZone
+          Action: Presents 
+        - NameElement: WindowNews
+          Action: Presents
+        - NameElement: WindowAccrualsAndPayment
+          Action: Presents
+   - NamePage: Abonnents
+     Elements: 
+        - NameElement: DropdownToggleChanges
+          Action: Click
+        - NameElement: DropdownToggleOperetion
+          Action: Click
+        - NameElement: DropdownToggleForm
+          Action: Click 
+        - NameElement: DropdownToggleReports
+          Action: Click
+        - NameElement: DropdownToggleDocumentation
+          Action: Click
+        - NameElement: ButtonNewAccount
+          Action: Click
+        - NameElement: ButtonFilter
+          Action: Click
+        - NameElement: ButtonApply
+          Action: Click
+        - NameElement: ButtonReset
+          Action: Click
+        - NameElement: TableAbonents
+          Action: Presence
+   - NamePage: Abonnent
+     Elements: 
+        - NameElement: ButtonInformation
+          Action: Click
+        - NameElement: ButtonCharacteristics
+          Action: Click
+        - NameElement: ButtonParams
+          Action: Click
+        - NameElement: ButtonCounters
+          Action: Click 
+        - NameElement: ButtonListResidents
+          Action: Click
+        - NameElement: ButtonTurn
+          Action: Click
+        - NameElement: ButtonNewHistory
+          Action: Click
+        - NameElement: ButtonCorrectors
+          Action: Click
+        - NameElement: ButtonPay
+          Action: Click
+        - NameElement: ButtonContracts
+          Action: Click
+        - NameElement: ButtonAdditionally
+          Action: Click
+        - NameElement: ButtonNotes
+          Action: Click
+        - NameElement: ButtonClaimWork
+          Action: Click
+        - NameElement: ButtonPrintDoc
+          Action: Click
+        - NameElement: ButtonHistoryChanges
+          Action: Click
+   - NamePage: Houses
+     Elements: 
+        - NameElement: DropdownToggleForm
+          Action: Click
+        - NameElement: ButtonNewHouse
+          Action: Click
+        - NameElement: ButtonFilter
+          Action: Click
+        - NameElement: ButtonApply
+          Action: Click
+        - NameElement: ButtonReset
+          Action: Click
+        - NameElement: ListHouses
+          Action: Presence
+   - NamePage: House
+     Elements: 
+        - NameElement: ButtonInformation
+          Action: Click
+        - NameElement: ButtonCharacteristicsCol
+          Action: Click
+        - NameElement: ButtonCharacteristicsQuality
+          Action: Click 
+        - NameElement: ButtonCharacteristicsDop
+          Action: Click
+        - NameElement: ButtonCountersHouse
+          Action: Click
+        - NameElement: ButtonAccunts
+          Action: Click
+        - NameElement: ButtonCountersAccount
+          Action: Click
+   - NamePage: Pay
+     Elements: 
+        - NameElement: ButtonInformation
+          Action: Click
+        - NameElement: ButtonList
+          Action: Click
+        - NameElement: ButtonFilter
+          Action: Click 
+        - NameElement: ListPay
+          Action: Presence
+   - NamePage: Report
+     Elements: 
+        - NameElement: TableReport
+          Action: Report
+        - NameElement: ButtonForm
+          Action: Click
+   - NamePage: Documetation
+     Elements: 
+         - NameElement: ListDoc
+          Action: Presence
+        - NameElement: Filter
+          Action: Click
+   - NamePage: Directory
+     Elements: 
+        - NameElement: TableServices
+          Action: Click
+        - NameElement: ButtonPrice
+          Action: Click
+        - NameElement: ButtonNorms
+          Action: Click
+        - NameElement: ButtonRates
+          Action: Click 
+        - NameElement: ListDirect
+          Action: Presence
+   - NamePage: AboutProject
+   - NamePage: Help
+   - NamePage: Documets   
+...

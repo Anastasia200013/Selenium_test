@@ -1,0 +1,14 @@
+---
+House:
+   Houseid: string
+   Address: string
+   Type: string
+   AmountCounters: integer
+   AmountAccountcd: integer
+   AmountApartmentes: integer
+   AmountOfRegistered: integer
+   AreaHouse: integer
+   Services:
+      - Serviceid: string
+      - ServiceName: string
+...

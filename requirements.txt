@@ -1,0 +1,10 @@
+python==3.10
+pytest==7.0.0
+PyYAML==6.0
+selenium==4.1.0
+gunicorn==19.6.0
+sorl-thumbnail==12.3
+ptpython==0.35
+yamllint==1.26.3
+pylint==2.12.2
+fdb==2.0.2

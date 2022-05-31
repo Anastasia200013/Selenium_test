@@ -1,0 +1,39 @@
+!!python/object:inenv.Lib.Case.TestDescription
+file_abonent: 'PycharmProjects\\selenium-test\\Domain\\abonent.yml'
+test: 'Abonent data validation'
+tests:
+- !!python/object:inenv.Lib.Case.Test
+  exp: '\d{8}'
+  statement: 'FOR Abonent.accountcd'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[А-Яа-я]+( [А-Я].){2}'
+  statement: 'FOR Abonent.fio'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[0-9]+'
+  statement: 'FOR Abonent.phone_number'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[а-яА-Я0-9,\.\s]+'
+  statement: 'FOR Abonent.address'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '[а-яА-Я0-9,\.\s]+'
+  statement: 'FOR Abonent.contractor_information'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: '\d+'
+  statement: 'FOR Abonent.services'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'
+- !!python/object:inenv.Lib.Case.Test
+  exp: ''
+  statement: 'FOR Abonent.counters'
+  test_source: 'direct-value'
+  type: 'Regex.fullMatch'

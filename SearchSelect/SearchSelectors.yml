@@ -1,7 +1,7 @@
 ---
 SelectorsAuthorization:
-   Type: ''
-   #   Subtype: '-'
+   file_test: 'PycharmProjects\\selenium-test\\TestCases\\Test.yml'
+   Type: 'User'
    Locations:
       - FieldName: 'User_login'
         Location: '#input_login_01'
@@ -9,25 +9,38 @@ SelectorsAuthorization:
         Location: '#input_password_01'
       - FieldName: 'Button_enter'
         Location: '#btn_login_accept_01.btn.btn-primary.btn-modal'
+      - FieldAcount: 'Button_enter'
+        Location: 'tr.ng-scope:nth-child(1) button.btn.btn-default.btn-xs.ng-scope:nth-child(1)'
 Selectors:
-   FileTest: 'C:\\Users\\a.petrova\\PycharmProjects\\selenium-test\\TestCases\\Test.yml'
-   Type: 'Abonent'
-   #   Subtype: '-'
+   file_test: 'PycharmProjects\\selenium-test\\TestCases\\Test.yml'
    Locations:
-      - FieldName: 'Accountcd'
+      - FieldName: accountcd
         Location: 'tr.ng-scope:nth-child(1) a.ng-scope'
-      - FieldName: 'FIO'
+      - FieldName: fiotr.ng-scope:nth-child(1) td.ng-scope:nth-child(4)>div.ng-scope
         Location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(3) div.ng-binding.ng-scope'
-      - FieldName: 'AddressString'
+      - FieldName: phone_number
+        Location: 'input.form-control.ng-pristine.ng-valid.ng-touched'
+      - FieldName: address
         Location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(4)>div.ng-scope'
+      - FieldName: contractor_information
+        Location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(5)>div.ng-scope'
+      - FieldName: servicesdiv.col-sm-2.ng-isolate-scope li.pointer-cursor.ng-scope:nth-child(5) a.ng-binding
+        Location: 'div.col-sm-2.ng-isolate-scope li.pointer-cursor.ng-scope:nth-child(3) a.ng-binding'
+      - FieldName: counters
+        Location: ''
+   Type: 'Abonent'
 Selectors_pages:
-   Type: ''
+   Type: 'Page'
    #  Subtype: '-'
    Locations:
-      - FieldName: 'Personal_account'
+      - FieldName: 'MainPage'
         Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(1)>a'
-      - FieldName: 'Personal_account'
+      - FieldName: 'Accounts'
         Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(2)>a'
+      - FieldName: 'Personal_counter'
+        Location: ' div.container.ng-scope  div.col-sm-2.ng-isolate-scope > ul > li:nth-child(5) > a'
+      - FieldName: 'Personal_counter_regim'
+        Location: ' #counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(9) > div > button:nth-child(4)'
       - FieldName: 'Houses'
         Location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(3)>a'
       - FieldName: 'Payments'

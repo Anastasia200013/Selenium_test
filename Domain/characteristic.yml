@@ -1,0 +1,14 @@
+---
+Characteristics:
+   TypeInformtion: string
+   CharacteristicId: string
+   Name: string
+   PresentValue: integer
+   DateOfChange: date
+   Value: string
+   ValidFrom: date
+   ValidFor: date
+   AccountDate: date
+   StartDate: date
+   Edit: boolean
+...

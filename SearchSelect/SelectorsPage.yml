@@ -1,0 +1,55 @@
+!!python/object:inenv.Lib.Selector.Selectors
+file_test: 'PycharmProjects\\selenium-test\\TestCases\\TestsPages.yml'
+locations:
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'Main'
+  location: '#navbar_collapse_01 > ul:nth-child(1) > li:nth-child(1) > a'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'ButtonPortal'
+  location: 'body > div > div:nth-child(1) > div.container.top-panel > div:nth-child(4)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'WindowOrganization'
+  location: 'div.ng-scope > div:nth-child(2) > div > div:nth-child(1) > div.panel.panel-primary > div.panel-heading'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'WindowServiceZone'
+  location: 'div.ng-scope > div:nth-child(2) > div > div:nth-child(2) > div.panel.panel-primary'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'WindowNews'
+  location: 'div.ng-scope > div:nth-child(3) > div > div:nth-child(2)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'WindowAccrualsAndPayment'
+  location: 'body > div > div.ng-scope > div:nth-child(3) > div > div:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'Abonents'
+  location: 'div#navbar_collapse_01 ul.nav.navbar-nav:nth-child(1) li:nth-child(2)>a'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'DropdownToggleChanges'
+  location: '#main-abonent-list > div:nth-child(12) > div.col-sm-9 > div > div:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'DropdownToggleOperetion'
+  location: '#main-abonent-list > div:nth-child(12) > div.col-sm-9 > div > div:nth-child(2)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'DropdownToggleForm'
+  location: '#main-abonent-list > div:nth-child(12) > div.col-sm-9 > div > div:nth-child(3)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'DropdownToggleReports'
+  location: '#main-abonent-list > div:nth-child(12) > div.col-sm-9 > div > div:nth-child(4)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'DropdownToggleDocumentation'
+  location: '#main-abonent-list > div:nth-child(12) > div.col-sm-9 > div > div:nth-child(5)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'ButtonNewAccount'
+  location: ''
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'ButtonFilter'
+  location: ''
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'ButtonApply'
+  location: ''
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'ButtonReset'
+  location: ''
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'TableAbonents'
+  location: '#main-abonent-list > div:nth-child(13) > div.col-sm-12 > div:nth-child(6) > table'
+type: Page

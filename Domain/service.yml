@@ -1,0 +1,7 @@
+---
+Services:
+   ServiceId: string
+   ServiseName: string
+   Counters:
+      - Counterid: string
+...

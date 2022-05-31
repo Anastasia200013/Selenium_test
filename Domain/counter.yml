@@ -1,0 +1,18 @@
+---
+Counter:
+   Serviceid: string
+   Mark: string
+   CounterName: string
+   SerialNumber: string
+   RegistrationDate: date
+   InstallationLocation: string
+   Status: string
+   IndicationsNow: integer
+   InitialIndications: integer
+   NextVerificationDate: date
+   LastVerification Date: date
+   SaelDate: date
+   NumberSeal: string
+   Typeseal: string
+   Regime: string
+...

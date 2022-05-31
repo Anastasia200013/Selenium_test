@@ -1,0 +1,22 @@
+---
+TestConnection:
+   URL: 'http://192.168.50.10:8510/main'
+   BD: 'C:\\Users\\a.petrova\\Desktop\\BDSEL\\ABONENT_3.fdb'
+TestUsers:
+   - UsersID: '1'
+     Role: 'Admin'
+     Login: 'SYSDBA'
+     Password: '305'
+   - UsersID: '2'
+     Role: 'User'
+     Login: 'USER_028'
+     Password: '0'
+   - UsersID: '3'
+     Role: 'User'
+     Login: 'WEB'
+     Password: '0'
+   - UsersID: '4'
+     Role: 'User'
+     Login: 'IST_ZKH'
+     Password: '1234'
+...

@@ -1,0 +1,25 @@
+!!python/object:inenv.Lib.Selector.Selectors
+file_test: 'PycharmProjects\\selenium-test\\TestCases\\TestsAbonent.yml'
+locations:
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: accountcd
+  location: 'tr.ng-scope:nth-child(1) a.ng-scope'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: fio
+  location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(3) div.ng-binding.ng-scope'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: phone_number
+  location: 'input.form-control.ng-pristine.ng-valid.ng-touched'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: address
+  location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(4)>div.ng-scope'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: contractor_information
+  location: 'tr.ng-scope:nth-child(1) td.ng-scope:nth-child(5)>div.ng-scope'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: services
+  location: 'div.col-sm-2.ng-isolate-scope li.pointer-cursor.ng-scope:nth-child(3) a.ng-binding'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: counters
+  location: 'div.col-sm-2.ng-isolate-scope li.pointer-cursor.ng-scope:nth-child(5) a.ng-binding'
+type: Abonent

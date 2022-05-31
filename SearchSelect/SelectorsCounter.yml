@@ -1,0 +1,49 @@
+!!python/object:inenv.Lib.Selector.Selectors
+file_test: 'PycharmProjects\\selenium-test\\TestCases\\TestsCounter.yml'
+locations:
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'serviceid'
+  location: ''
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'mark'
+  location: '#counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(1) > div'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'counter_name'
+  location: '#counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(1) > div'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'serial_number'
+  location: '#counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(2) > div'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'registration_date'
+  location: '#counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(3) > div'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'installation_location'
+  location: '#counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(4) > div'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'status'
+  location: '#counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(5) > div > div'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'indications_now'
+  location: '#counters-page > div:nth-child(2) > table > tbody > tr > td:nth-child(6) > div > div > div:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'initial_indications'
+  location: ''
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'next_verification_date'
+  location: '#counters-page > div:nth-child(2)  td:nth-child(7) > div > div > div:nth-child(2)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'last_verification_date'
+  location: '#counters-page > div:nth-child(2)   td:nth-child(7) > div > div > div:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'date_seal'
+  location: '#counters-page > div:nth-child(2)  td:nth-child(8) > div > div div:nth-child(2) div:nth-child(3)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'serial_number'
+  location: '#counters-page > div:nth-child(2)  td:nth-child(8) > div > div > div:nth-child(2) > div:nth-child(2)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'type_seal'
+  location: '#counters-page > div:nth-child(2) td:nth-child(8) > div > div > div:nth-child(2) > div:nth-child(1)'
+- !!python/object:inenv.Lib.Selector.Location
+  field_name: 'regime'
+  location: 'div.font-small-info.ng-binding.ng-scope'
+type: Counter
