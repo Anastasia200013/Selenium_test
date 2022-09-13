@@ -1,12 +1,7 @@
-from tasks import Task
-def test_dict():
-        task = Task('do something', 'okken', True, 21)
-        dict = task._asdict()
-        expected = {'summary': 'do something',
-                    'owner': 'okken',
-                    'done': True,
-                    'id': 21}
-        assert dict == expected
+def avg(ranks):
+    assert len(ranks) != 0, 'Список ranks не должен быть пустым'
+    return round(sum(ranks)/len(ranks), 2)
 
-
+ranks = []
+print("Среднее значение:", avg(ranks))
 
